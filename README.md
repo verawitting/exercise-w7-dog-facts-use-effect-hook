@@ -4,7 +4,7 @@
   </a>
 </h1>
 
-# React Lightbulb useEffect Hook Exercise
+# React Dog Facts useEffect Hook Exercise
 
 For this weeks practice you will practice using the useEffect hook to create a simple app that will use an external free API to retrieve Dog Facts.
 
