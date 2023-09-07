@@ -3,15 +3,15 @@ import { DogFact } from "./components/DogFact";
 
 export const App = () => {
   const [fact, setFact] = useState(null);
-  const fetchDogFact = () => {
-    fetch(dogApi)
+  const fetchDogFact = async () => {
+    await fetch(dogApi)
       .then((response) => response.json())
       .then((data) => {
         if (data.data) {
           let cleanData = data.data;
           console.log(cleanData);
           console.log(cleanData[0].attributes);
-          setFact(cleanData[0].attributes.body);
+          setFact(cleanData[0]);
         }
       })
       .catch((error) => {

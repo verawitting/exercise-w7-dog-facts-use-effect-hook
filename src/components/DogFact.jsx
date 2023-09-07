@@ -1,3 +1,4 @@
 export const DogFact = ({ fact }) => {
-  return <div>{!fact ? "Loading..." : fact} </div>;
+  let cleanFact = fact.attributes.body;
+  return <div>{!cleanFact ? "Loading..." : cleanFact} </div>;
 };
